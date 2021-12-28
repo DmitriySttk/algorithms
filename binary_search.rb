@@ -1,13 +1,13 @@
 def binary_search(list, item)
   low = 0
   high = list.length - 1
-  attempt = 0
+  attempt = 1
   while low <= high
     mid = (low + high) / 2
     guess = list[mid]
 
     if guess == item
-      return "attempts: #{attempt + 1}" # start from 0 so +1
+      return "attempts: #{attempt}"
     elsif guess > item
       high = mid - 1
       attempt += 1
