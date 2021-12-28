@@ -7,7 +7,7 @@ def binary_search(list, item)
     guess = list[mid]
 
     if guess == item
-      return attempt
+      return "attempts: #{attempt}"
     elsif guess > item
       high = mid - 1
       attempt += 1
@@ -20,7 +20,7 @@ def binary_search(list, item)
   return nil
 end
 
-my_list = [1, 3, 5, 7, 9, 10, 11, 12, 13]
+my_list = (1..1000).to_a
 puts binary_search(my_list, 5) # => 1
 
 # We need to use .inspect here because just printing nil
