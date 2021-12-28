@@ -5,7 +5,7 @@ def countdown(i)
     return
     # recursive case
   else
-    puts countdown(i - 1)
+     countdown(i - 1)
   end
 end
 
