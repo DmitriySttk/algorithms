@@ -6,4 +6,4 @@ def fact(x)
   end
 end
 
-puts fact(6)
+puts fact(4)
